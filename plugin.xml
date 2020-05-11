@@ -10,6 +10,9 @@
             <param name="android-package" value="cordova.plugin.telephonymanager.TelephonyManager" />
          </feature>
       </config-file>
+      <config-file target="AndroidManifest.xml" parent="/manifest/application">
+         <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+      </config-file>
       <config-file parent="/*" target="AndroidManifest.xml" />
       <source-file src="src/android/TelephonyManager.java" target-dir="src/cordova/plugin/telephonymanager/TelephonyManager" />
    </platform>
